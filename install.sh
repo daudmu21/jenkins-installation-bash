@@ -19,3 +19,7 @@ sudo systemctl start jenkins
 
 #Enable Jenkins
 sudo systemctl enable jenkins
+
+#Adjust firewalls
+sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
+sudo firewall-cmd --reload
